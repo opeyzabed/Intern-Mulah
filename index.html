@@ -8,6 +8,17 @@
             td{
                 width: 100px;
             }
+            #csvTable th{
+                font-weight: normal;
+                text-align: left;
+            }
+            #csvTable tr td:nth-child(2){
+                text-align: right;
+            }
+            #table2{
+                width: 50%;
+                text-align: center;
+            }
         </style>
     </head>
 
@@ -18,10 +29,20 @@
             <thead></thead>
             <tbody></tbody>
         </table>
+        <br><br>
+        <table id="table2">
+            <caption><b>Table 2</b></caption>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            
+            <tbody></tbody>
+        </table>
     
-        <!-- Include jQuery library -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- Your script to read and display CSV data -->
         <script src="app.js"></script>
     </body>
 </html>
